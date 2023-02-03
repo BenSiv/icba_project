@@ -1,7 +1,7 @@
 # icba_project
 Predicting milk attributes as a factor of cattle feed
 
-!(Israeli Cattle Breeders Association)[https://github.com/BenSiv/icba_project.git/ICBA_logo.png]
+!(Israeli Cattle Breeders Association)[https://github.com/BenSiv/icba_project/ICBA_logo.png]
 
 ## Summary
 This is a dataset of a single dairy farm in israel. There are two tables, the first is the feed data per group of cows in a daily time series in the years 2005-2022. The second table is the lab results of the milk analysis for the dairy cows in a monthly time series.
