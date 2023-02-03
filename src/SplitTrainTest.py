@@ -37,7 +37,7 @@ def main():
         data_sets[data_set] = WeekBeforeSample.iloc[start:end , :]
 
     for data_set, data in data_sets.items():
-        data.to_csv(os.path.join(PROJECT_DIR,"data", "splitted", f"{data_set}.csv"))
+        data.to_csv(os.path.join(PROJECT_DIR,"data", "splitted", "week_before",f"{data_set}.csv"))
 
 
 
