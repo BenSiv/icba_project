@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 
 def main(PROJECT_DIR):
     """program skeleton"""
-    train_set = pd.read_csv(os.path.join(PROJECT_DIR,"data", "splitted", "week_before","train.csv")).drop(columns=["Unnamed: 0"])
-    val_set = pd.read_csv(os.path.join(PROJECT_DIR,"data", "splitted", "week_before","val.csv")).drop(columns=["Unnamed: 0"])
+    train_set = pd.read_csv(os.path.join(PROJECT_DIR,"data", "splitted", "week_before","train.csv"))
+    val_set = pd.read_csv(os.path.join(PROJECT_DIR,"data", "splitted", "week_before","val.csv"))
 
     X_train = train_set.drop(columns=["Milk","Fat","Protein","Lactose"]).set_index("Sample")
     y_train = train_set[["Sample","Milk","Fat","Protein","Lactose"]].set_index("Sample")

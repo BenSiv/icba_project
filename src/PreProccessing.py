@@ -29,7 +29,6 @@ def main(PROJECT_DIR):
 
     # filtering the feed dataframe to the measurments only
     feed_measurments = pd.read_csv(os.path.join(PROJECT_DIR,"data", "others", "Feed_measure.csv"))
-    feed_measurments.drop(columns=["Unnamed: 0"], inplace=True)
     features = feed.merge(feed_measurments)
 
     # assign sample groups based on the date of the sample
@@ -66,7 +65,7 @@ def main(PROJECT_DIR):
     data = pd.merge(features_wide, targets, on="Sample", how="left")
     data.drop(columns=[data.columns[1]], inplace=True)
 
-    data.to_csv(os.path.join(PROJECT_DIR,"data", "combined", "WeekBeforeSample.csv"))
+    data.to_csv(os.path.join(PROJECT_DIR,"data", "combined", "WeekBeforeSample.csv"), index=False)
 
 
 if __name__ == "__main__":
