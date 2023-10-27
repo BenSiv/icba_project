@@ -35,3 +35,14 @@ This is a dataset of a single dairy farm in israel. There are two tables, the fi
 - **Protein**: Numerical continuouse, Percent of protein in the milk
 - **Lactose**: Numerical continuouse, Percent of lactose in the milk
 - **Somatic_cells**: Numerical descrete, count of somatic cells in a ml of milk.
+
+## Modeling results
+The most favorable outcomes were achieved using a random forest model when I utilized nutritional data for each day of the week leading up to the test.
+
+In the enclosed images, you can observe predictions for each of the milk-related metrics. The section before the green dashed line represents the data used for training, while the portion after that line pertains to the test data.
+
+Significantly, there is a pronounced issue of "overfitting," indicating that the model lacks generality, and this has a detrimental impact on the accuracy of predictions for the test data.
+
+![Fat content](docs/figures/week_before/random_forest/Fat.png)
+![Protein content](docs/figures/week_before/random_forest/Protein.png)
+![Lactose content](docs/figures/week_before/random_forest/Lactose.png)
